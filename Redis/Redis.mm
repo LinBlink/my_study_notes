@@ -4,7 +4,7 @@
 <node TEXT="Redis" FOLDED="false" ID="ID_650774896" CREATED="1777165478971" MODIFIED="1779766967667" VGAP_QUANTITY="2 pt" COMMON_HGAP_QUANTITY="14 pt">
 <hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
 <hook NAME="MapStyle" background="#2e3440ff" zoom="1.21">
-    <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" auto_compact_layout="true" show_tags="UNDER_NODES" show_note_icons="true" fit_to_viewport="false" show_icons="BESIDE_NODES" showTagCategories="false" associatedTemplateLocation="file:/C:/Users/wangb/Desktop/my_study_notes/软考高级系统架构师/软考高级系统架构师.mm"/>
+    <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" auto_compact_layout="true" show_tags="UNDER_NODES" show_note_icons="true" associatedTemplateLocation="file:/C:/Users/wangb/Desktop/my_study_notes/软考高级系统架构师/软考高级系统架构师.mm" fit_to_viewport="false" show_icons="BESIDE_NODES" showTagCategories="false"/>
     <tags category_separator="::"/>
 
 <map_styles>
@@ -399,11 +399,27 @@
 <node TEXT="一人一单问题" ID="ID_1020563021" CREATED="1779787312464" MODIFIED="1779787320280">
 <node TEXT="一个用户只能拿一个优惠券" ID="ID_1168196424" CREATED="1779787346864" MODIFIED="1779787362690"/>
 <node TEXT="出现的问题" ID="ID_1647620917" CREATED="1779788062509" MODIFIED="1779788067460">
-<node TEXT="一人会下多单" ID="ID_449204132" CREATED="1779788067858" MODIFIED="1779788075911"/>
-</node>
+<node TEXT="一人会下多单" ID="ID_449204132" CREATED="1779788067858" MODIFIED="1779788075911">
 <node TEXT="解决方案" ID="ID_233991535" CREATED="1779788611214" MODIFIED="1779788613003">
 <node TEXT="悲观锁" ID="ID_1558633546" CREATED="1779788613077" MODIFIED="1779788615166">
 <font BOLD="true"/>
+</node>
+<node TEXT="AspectJ 依赖" ID="ID_546891423" CREATED="1779852042794" MODIFIED="1779852046515"/>
+</node>
+</node>
+<node ID="ID_870023726" CREATED="1779853039661" MODIFIED="1779853074938"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      集群情况下一人一单<span style="font-weight: bold;">线程不安全</span>
+    </p>
+  </body>
+</html>
+</richcontent>
 </node>
 </node>
 </node>
