@@ -3,7 +3,7 @@
 <bookmarks/>
 <node TEXT="Redis" FOLDED="false" ID="ID_650774896" CREATED="1777165478971" MODIFIED="1779766967667" VGAP_QUANTITY="2 pt" COMMON_HGAP_QUANTITY="14 pt">
 <hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
-<hook NAME="MapStyle" background="#2e3440ff" zoom="1.1">
+<hook NAME="MapStyle" background="#2e3440ff" zoom="1.4641001">
     <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" auto_compact_layout="true" show_tags="UNDER_NODES" show_note_icons="true" associatedTemplateLocation="file:/C:/Users/wangb/Desktop/my_study_notes/软考高级系统架构师/软考高级系统架构师.mm" fit_to_viewport="false" show_icons="BESIDE_NODES" showTagCategories="false"/>
     <tags category_separator="::"/>
 
@@ -591,7 +591,33 @@
 <node TEXT="30s" ID="ID_1575661862" CREATED="1779938572053" MODIFIED="1779938572809"/>
 </node>
 </node>
-<node TEXT="Redisson 可重入锁 原理" ID="ID_712268141" CREATED="1779939003842" MODIFIED="1779939010186"/>
+<node TEXT="可重入锁 原理" ID="ID_712268141" CREATED="1779939003842" MODIFIED="1780020815793">
+<node TEXT="https://www.bilibili.com/video/BV1cr4y1671t?spm_id_from=333.788.player.switch&amp;vd_source=58ab91158f11dee524ce0848faa94fd0&amp;p=67" ID="ID_1635619131" CREATED="1779965854082" MODIFIED="1779966254945" LINK="https://www.bilibili.com/video/BV1cr4y1671t?spm_id_from=333.788.player.switch&amp;vd_source=58ab91158f11dee524ce0848faa94fd0&amp;p=67">
+<font BOLD="false"/>
+</node>
+<node TEXT="flowchart" ID="ID_1806148730" CREATED="1780020513735" MODIFIED="1780020563353">
+<hook URI="../../../Downloads/Lock%20Acquisition%20Workflow-2026-05-29-020826.png" SIZE="0.1845737" NAME="ExternalObject"/>
+</node>
+</node>
+<node TEXT="主从一致性问题" ID="ID_262921247" CREATED="1780020805297" MODIFIED="1780020808972">
+<node TEXT="https://www.bilibili.com/video/BV1cr4y1671t?spm_id_from=333.788.player.switch&amp;vd_source=58ab91158f11dee524ce0848faa94fd0&amp;p=68" ID="ID_231451245" CREATED="1780025121936" MODIFIED="1780025121936" LINK="https://www.bilibili.com/video/BV1cr4y1671t?spm_id_from=333.788.player.switch&amp;vd_source=58ab91158f11dee524ce0848faa94fd0&amp;p=68"/>
+<node TEXT="具体问题是什么" ID="ID_1011656236" CREATED="1780021018619" MODIFIED="1780021028594"/>
+<node TEXT="解决方案" ID="ID_512355712" CREATED="1780021028726" MODIFIED="1780021299175">
+<node TEXT="multilock" ID="ID_377826824" CREATED="1780021299301" MODIFIED="1780021303084"/>
+</node>
+</node>
+<node TEXT="Redisson 如何解决问题的" ID="ID_431236591" CREATED="1780020572959" MODIFIED="1780020578733">
+<node TEXT="可重入" ID="ID_96146189" CREATED="1780020578920" MODIFIED="1780020582614">
+<node TEXT="利用 hash 结构记录线程id和重入次数" ID="ID_1512626990" CREATED="1780020585531" MODIFIED="1780020594764"/>
+</node>
+<node TEXT="可重试" ID="ID_1994976901" CREATED="1780020582758" MODIFIED="1780020585216">
+<node TEXT="利用信号量和 PubSub 功能实现等待、唤醒，获取锁失败的重试机制" ID="ID_31699130" CREATED="1780020595739" MODIFIED="1780020620661"/>
+</node>
+<node TEXT="超时续约" ID="ID_1530098613" CREATED="1780020621762" MODIFIED="1780020624802">
+<node TEXT="利用 WATCH_DOG 每隔一段时间重置超时时间" ID="ID_642837303" CREATED="1780020624957" MODIFIED="1780020640711"/>
+</node>
+<node TEXT="主从一致性" ID="ID_212094747" CREATED="1780020698643" MODIFIED="1780020702025"/>
+</node>
 </node>
 </node>
 </node>
@@ -613,6 +639,7 @@
 </node>
 </node>
 </node>
+<node TEXT="Redis优化秒杀" ID="ID_428165993" CREATED="1780034156524" MODIFIED="1780034161550"/>
 </node>
 </node>
 </node>
