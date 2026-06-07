@@ -2,7 +2,7 @@
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
 <bookmarks/>
 <node TEXT="HANDY_TOOLS" FOLDED="false" ID="ID_618939526" CREATED="1780640271257" MODIFIED="1780640280486"><hook NAME="MapStyle" background="#2e3440ff">
-    <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" auto_compact_layout="true" show_note_icons="true" fit_to_viewport="false" show_icons="BESIDE_NODES" show_tags="UNDER_NODES" showTagCategories="false"/>
+    <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" auto_compact_layout="true" show_tags="UNDER_NODES" show_note_icons="true" fit_to_viewport="false" show_icons="BESIDE_NODES" showTagCategories="false"/>
     <tags category_separator="::"/>
 
 <map_styles>
@@ -85,6 +85,23 @@
 <node TEXT="vim" POSITION="bottom_or_right" ID="ID_1142807349" CREATED="1780640280635" MODIFIED="1780640281484">
 <node TEXT="Neovim" ID="ID_1570115880" CREATED="1780640287719" MODIFIED="1780640288577">
 <node TEXT="nvim + nvim-lspconfig + nvim-cmp" ID="ID_1571776405" CREATED="1780640293070" MODIFIED="1780640293849"/>
+</node>
+</node>
+<node TEXT="docker" POSITION="bottom_or_right" ID="ID_1078639002" CREATED="1780812914590" MODIFIED="1780812916958">
+<node TEXT=" curl -fsSL https://get.docker.com -o get-docker.sh&#xa; sudo sh ./get-docker.sh" ID="ID_1250405929" CREATED="1780812921068" MODIFIED="1780813743735"/>
+<node TEXT="mysql" ID="ID_1539414139" CREATED="1780839474196" MODIFIED="1780839478598">
+<node ID="ID_1735993109" CREATED="1780839485883" MODIFIED="1780839927969"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    docker run <span class="ͼ12">-d</span>&#xa0;\<br/><span class="ͼ12">--name</span>&#xa0;mysql \<br/><span class="ͼ12">-e</span>&#xa0;<span class="ͼ11">MYSQL_ROOT_PASSWORD</span><span class="ͼv">=</span><span class="ͼy">123456</span>&#xa0;&#xa0;\<br/><span class="ͼ12">-e</span>&#xa0;<span class="ͼ11">MYSQL_DATABASE</span><span class="ͼv">=</span>testdb \<br/><span class="ͼ12">-e</span>&#xa0;<span class="ͼ11">MYSQL_USER</span><span class="ͼv">=</span>test \<br/><span class="ͼ12">-e</span>&#xa0;<span class="ͼ11">MYSQL_PASSWORD</span><span class="ͼv">=</span>test123 \<br/><span class="ͼ12">-p</span>&#xa0;<span class="ͼy">3306</span>:3306 \<br/><span class="ͼ12">-v</span>&#xa0;mysql-data:/var/lib/mysql \<br/>mysql:8 \<br/><span class="ͼ12">--character-set-server</span><span class="ͼv">=</span>utf8mb4 \<br/><span class="ͼ12">--collation-server</span><span class="ͼv">=</span>utf8mb4_unicode_ci
+  </body>
+</html>
+</richcontent>
+</node>
 </node>
 </node>
 </node>
