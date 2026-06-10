@@ -1,7 +1,7 @@
 <map version="freeplane 1.12.15">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
 <bookmarks/>
-<node TEXT="HANDY_TOOLS" FOLDED="false" ID="ID_618939526" CREATED="1780640271257" MODIFIED="1780640280486"><hook NAME="MapStyle" background="#2e3440ff">
+<node TEXT="Kafka" FOLDED="false" ID="ID_341770835" CREATED="1780910440854" MODIFIED="1780910449159"><hook NAME="MapStyle" background="#2e3440ff">
     <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" auto_compact_layout="true" show_tags="UNDER_NODES" show_note_icons="true" fit_to_viewport="false" show_icons="BESIDE_NODES" showTagCategories="false"/>
     <tags category_separator="::"/>
 
@@ -82,49 +82,21 @@
 </map_styles>
 </hook>
 <hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
-<node TEXT="vim" POSITION="bottom_or_right" ID="ID_1142807349" CREATED="1780640280635" MODIFIED="1780640281484">
-<node TEXT="Neovim" ID="ID_1570115880" CREATED="1780640287719" MODIFIED="1780640288577">
-<node TEXT="nvim + nvim-lspconfig + nvim-cmp" ID="ID_1571776405" CREATED="1780640293070" MODIFIED="1780640293849"/>
+<node TEXT="JMS" POSITION="bottom_or_right" ID="ID_1381656222" CREATED="1780911974094" MODIFIED="1780911975593">
+<node TEXT="Java Message Service" ID="ID_681252948" CREATED="1780911979745" MODIFIED="1780911983759"/>
+<node TEXT="消息模型" ID="ID_405844343" CREATED="1780912721586" MODIFIED="1780912723540">
+<node TEXT="P2P" ID="ID_1311303560" CREATED="1780912723791" MODIFIED="1780912725292"/>
+<node TEXT="PS" ID="ID_1478015093" CREATED="1780912725693" MODIFIED="1780912726850"/>
 </node>
 </node>
-<node TEXT="docker" POSITION="bottom_or_right" ID="ID_1078639002" CREATED="1780812914590" MODIFIED="1780812916958">
-<node TEXT="install docker" ID="ID_944268525" CREATED="1781015871376" MODIFIED="1781015873899">
-<node TEXT=" curl -fsSL https://get.docker.com -o get-docker.sh&#xa; sudo sh ./get-docker.sh" POSITION="bottom_or_right" ID="ID_1250405929" CREATED="1780812921068" MODIFIED="1780813743735"/>
-</node>
-<node TEXT="mysql" ID="ID_1539414139" CREATED="1780839474196" MODIFIED="1780839478598">
-<node ID="ID_1735993109" CREATED="1780839485883" MODIFIED="1780839927969"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    docker run <span class="ͼ12">-d</span>&#xa0;\<br/><span class="ͼ12">--name</span>&#xa0;mysql \<br/><span class="ͼ12">-e</span>&#xa0;<span class="ͼ11">MYSQL_ROOT_PASSWORD</span><span class="ͼv">=</span><span class="ͼy">123456</span>&#xa0;&#xa0;\<br/><span class="ͼ12">-e</span>&#xa0;<span class="ͼ11">MYSQL_DATABASE</span><span class="ͼv">=</span>testdb \<br/><span class="ͼ12">-e</span>&#xa0;<span class="ͼ11">MYSQL_USER</span><span class="ͼv">=</span>test \<br/><span class="ͼ12">-e</span>&#xa0;<span class="ͼ11">MYSQL_PASSWORD</span><span class="ͼv">=</span>test123 \<br/><span class="ͼ12">-p</span>&#xa0;<span class="ͼy">3306</span>:3306 \<br/><span class="ͼ12">-v</span>&#xa0;mysql-data:/var/lib/mysql \<br/>mysql:8 \<br/><span class="ͼ12">--character-set-server</span><span class="ͼv">=</span>utf8mb4 \<br/><span class="ͼ12">--collation-server</span><span class="ͼv">=</span>utf8mb4_unicode_ci
-  </body>
-</html>
-</richcontent>
+<node TEXT="安装运行上手" POSITION="bottom_or_right" ID="ID_1901485815" CREATED="1780916984356" MODIFIED="1780918124479">
+<node TEXT="端口号" ID="ID_1834093295" CREATED="1780918659906" MODIFIED="1780918664282">
+<node TEXT="9092" OBJECT="java.lang.Long|9092" ID="ID_1271455538" CREATED="1780918666642" MODIFIED="1780918667504"/>
 </node>
 </node>
-<node TEXT="n8n" ID="ID_730885732" CREATED="1781015877567" MODIFIED="1781015879032">
-<node TEXT="docker volume create n8n_data&#xa;&#xa;docker run -it --rm \&#xa; --name n8n \&#xa; -p 5678:5678 \&#xa; -e GENERIC_TIMEZONE=&quot;Asia/Shanghai&quot; \&#xa; -e TZ=&quot;Asia/Shanghai&quot; \&#xa; -e N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true \&#xa; -e N8N_RUNNERS_ENABLED=true \&#xa; -v n8n_data:/home/node/.n8n \&#xa; docker.n8n.io/n8nio/n8n" ID="ID_1158683379" CREATED="1781015881586" MODIFIED="1781055741467"/>
-<node ID="ID_312995732" CREATED="1781061244926" MODIFIED="1781061244926"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <code style="color: rgb(0, 0, 0); font-size: 18px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; word-spacing: 0px; white-space: normal"><span style="color: rgb(0, 0, 0); font-size: 18px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; word-spacing: 0px; white-space: normal;">N8N_SECURE_COOKIE</span></code><span style="color: rgb(0, 0, 0); font-family: Open Sans, sans-serif; font-size: 18px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; word-spacing: 0px; white-space: normal; display: inline !important; float: none;">&#xa0;to&#xa0;</span><code style="color: rgb(0, 0, 0); font-size: 18px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; word-spacing: 0px; white-space: normal"><span style="color: rgb(0, 0, 0); font-size: 18px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; word-spacing: 0px; white-space: normal;">false</span></code>
-  </body>
-</html>
-</richcontent>
-</node>
-</node>
-</node>
-<node TEXT="nodejs" POSITION="bottom_or_right" ID="ID_1567578902" CREATED="1781058613583" MODIFIED="1781058617171">
-<node TEXT="linux" ID="ID_16567314" CREATED="1781062155871" MODIFIED="1781062161920">
-<node TEXT="# Download and install nvm:&#xa;curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.5/install.sh | bash&#xa;&#xa;# in lieu of restarting the shell&#xa;\. &quot;$HOME/.nvm/nvm.sh&quot;&#xa;&#xa;# Download and install Node.js:&#xa;nvm install 24&#xa;&#xa;# Verify the Node.js version:&#xa;node -v # Should print &quot;v24.16.0&quot;.&#xa;&#xa;# Verify npm version:&#xa;npm -v # Should print &quot;11.13.0&quot;." ID="ID_345822137" CREATED="1781062169291" MODIFIED="1781062170125"/>
-</node>
+<node TEXT="Kafka节点&#xa;ZNode" POSITION="bottom_or_right" ID="ID_1521077581" CREATED="1781056915606" MODIFIED="1781056971350">
+<node TEXT="临时节点" ID="ID_1776435354" CREATED="1781056922842" MODIFIED="1781056926640"/>
+<node TEXT="持久化节点" ID="ID_955756863" CREATED="1781056926808" MODIFIED="1781056929810"/>
 </node>
 </node>
 </map>
