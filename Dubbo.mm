@@ -1,8 +1,10 @@
 <map version="freeplane 1.12.15">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
 <bookmarks/>
-<node TEXT="HANDY_TOOLS" FOLDED="false" ID="ID_618939526" CREATED="1780640271257" MODIFIED="1780640280486"><hook NAME="MapStyle" background="#2e3440ff">
-    <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" auto_compact_layout="true" show_tags="UNDER_NODES" show_note_icons="true" fit_to_viewport="false" show_icons="BESIDE_NODES" showTagCategories="false"/>
+<node TEXT="Dubbo" FOLDED="false" ID="ID_47807006" CREATED="1781167220763" MODIFIED="1781167255790">
+<hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
+<hook NAME="MapStyle" background="#2e3440ff">
+    <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" auto_compact_layout="true" show_note_icons="true" fit_to_viewport="false" show_icons="BESIDE_NODES" showTagCategories="false" show_tags="UNDER_NODES" associatedTemplateLocation="file:////192.168.2.11/d/PUBLIC/_DOCUMENTS/my_study_notes/微服务.mm"/>
     <tags category_separator="::"/>
 
 <map_styles>
@@ -81,49 +83,32 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
-<node TEXT="vim" POSITION="bottom_or_right" ID="ID_1142807349" CREATED="1780640280635" MODIFIED="1780640281484">
-<node TEXT="Neovim" ID="ID_1570115880" CREATED="1780640287719" MODIFIED="1780640288577">
-<node TEXT="nvim + nvim-lspconfig + nvim-cmp" ID="ID_1571776405" CREATED="1780640293070" MODIFIED="1780640293849"/>
+<node TEXT="概念" POSITION="bottom_or_right" ID="ID_1687605026" CREATED="1781167249381" MODIFIED="1781167295248">
+<node TEXT="基于JAVA的高性能、轻量级RPC框架" ID="ID_1447120422" CREATED="1781167295346" MODIFIED="1781167307612"/>
+<node TEXT="SOA = RPC + 服务治理" ID="ID_834775542" CREATED="1781167309591" MODIFIED="1781167315667"/>
 </node>
+<node TEXT="不同架构对比" POSITION="bottom_or_right" ID="ID_105581139" CREATED="1781173648334" MODIFIED="1781173653271">
+<node TEXT="垂直架构" ID="ID_1831061536" CREATED="1781173653439" MODIFIED="1781173657467">
+<node TEXT="按业务" ID="ID_639339804" CREATED="1781173662933" MODIFIED="1781173664444"/>
 </node>
-<node TEXT="docker" POSITION="bottom_or_right" ID="ID_1078639002" CREATED="1780812914590" MODIFIED="1780812916958">
-<node TEXT="install docker" ID="ID_944268525" CREATED="1781015871376" MODIFIED="1781015873899">
-<node TEXT=" curl -fsSL https://get.docker.com -o get-docker.sh&#xa; sudo sh ./get-docker.sh" POSITION="bottom_or_right" ID="ID_1250405929" CREATED="1780812921068" MODIFIED="1780813743735"/>
+<node TEXT="水平架构" ID="ID_1881191620" CREATED="1781173657588" MODIFIED="1781173659589">
+<node TEXT="按技术" ID="ID_1768992769" CREATED="1781173660313" MODIFIED="1781173662221"/>
 </node>
-<node TEXT="mysql" ID="ID_1539414139" CREATED="1780839474196" MODIFIED="1780839478598">
-<node ID="ID_1735993109" CREATED="1780839485883" MODIFIED="1780839927969"><richcontent TYPE="NODE">
+<node TEXT="RPC架构" ID="ID_1649281405" CREATED="1781173665345" MODIFIED="1781173670864">
+<node TEXT="解决了什么痛点？" ID="ID_1375239052" CREATED="1781173745144" MODIFIED="1781173750894">
+<node ID="ID_1116055567" CREATED="1781173796253" MODIFIED="1781173796253"><richcontent TYPE="NODE">
 
 <html>
   <head>
     
   </head>
   <body>
-    docker run <span class="ͼ12">-d</span>&#xa0;\<br/><span class="ͼ12">--name</span>&#xa0;mysql \<br/><span class="ͼ12">-e</span>&#xa0;<span class="ͼ11">MYSQL_ROOT_PASSWORD</span><span class="ͼv">=</span><span class="ͼy">123456</span>&#xa0;&#xa0;\<br/><span class="ͼ12">-e</span>&#xa0;<span class="ͼ11">MYSQL_DATABASE</span><span class="ͼv">=</span>testdb \<br/><span class="ͼ12">-e</span>&#xa0;<span class="ͼ11">MYSQL_USER</span><span class="ͼv">=</span>test \<br/><span class="ͼ12">-e</span>&#xa0;<span class="ͼ11">MYSQL_PASSWORD</span><span class="ͼv">=</span>test123 \<br/><span class="ͼ12">-p</span>&#xa0;<span class="ͼy">3306</span>:3306 \<br/><span class="ͼ12">-v</span>&#xa0;mysql-data:/var/lib/mysql \<br/>mysql:8 \<br/><span class="ͼ12">--character-set-server</span><span class="ͼv">=</span>utf8mb4 \<br/><span class="ͼ12">--collation-server</span><span class="ͼv">=</span>utf8mb4_unicode_ci
+    <b data-path-to-node="0" data-index-in-node="30" class="">分布式架构中，服务间通信带来的“高成本”与“高复杂度”痛点</b><span class="">。</span>
   </body>
 </html>
 </richcontent>
 </node>
 </node>
-<node TEXT="n8n" ID="ID_730885732" CREATED="1781015877567" MODIFIED="1781015879032">
-<node TEXT="docker volume create n8n_data&#xa;&#xa;docker run -it --rm \&#xa; --name n8n \&#xa; -p 5678:5678 \&#xa; -e GENERIC_TIMEZONE=&quot;Asia/Shanghai&quot; \&#xa; -e TZ=&quot;Asia/Shanghai&quot; \&#xa; -e N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true \&#xa; -e N8N_RUNNERS_ENABLED=true \&#xa; -v n8n_data:/home/node/.n8n \&#xa; docker.n8n.io/n8nio/n8n" ID="ID_1158683379" CREATED="1781015881586" MODIFIED="1781055741467"/>
-<node ID="ID_453666478" CREATED="1781065824019" MODIFIED="1781065824019"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <span class="hljs-built_in">export</span>&#xa0;N8N_SECURE_COOKIE=<span class="hljs-literal">false</span>
-  </body>
-</html>
-</richcontent>
-</node>
-</node>
-</node>
-<node TEXT="nodejs" POSITION="bottom_or_right" ID="ID_1567578902" CREATED="1781058613583" MODIFIED="1781058617171">
-<node TEXT="linux" ID="ID_16567314" CREATED="1781062155871" MODIFIED="1781062161920">
-<node TEXT="# Download and install nvm:&#xa;curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.5/install.sh | bash&#xa;&#xa;# in lieu of restarting the shell&#xa;\. &quot;$HOME/.nvm/nvm.sh&quot;&#xa;&#xa;# Download and install Node.js:&#xa;nvm install 24&#xa;&#xa;# Verify the Node.js version:&#xa;node -v # Should print &quot;v24.16.0&quot;.&#xa;&#xa;# Verify npm version:&#xa;npm -v # Should print &quot;11.13.0&quot;." ID="ID_345822137" CREATED="1781062169291" MODIFIED="1781062170125"/>
 </node>
 </node>
 </node>
