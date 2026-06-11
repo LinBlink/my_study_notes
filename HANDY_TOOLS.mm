@@ -92,14 +92,15 @@
 <node TEXT=" curl -fsSL https://get.docker.com -o get-docker.sh&#xa; sudo sh ./get-docker.sh" POSITION="bottom_or_right" ID="ID_1250405929" CREATED="1780812921068" MODIFIED="1780813743735"/>
 </node>
 <node TEXT="mysql" ID="ID_1539414139" CREATED="1780839474196" MODIFIED="1780839478598">
-<node ID="ID_1735993109" CREATED="1780839485883" MODIFIED="1780839927969"><richcontent TYPE="NODE">
+<node TEXT="docker volume create mysql-data" ID="ID_13277700" CREATED="1781175833806" MODIFIED="1781175834654"/>
+<node ID="ID_1735993109" CREATED="1780839485883" MODIFIED="1781176126733"><richcontent TYPE="NODE">
 
 <html>
   <head>
     
   </head>
   <body>
-    docker run <span class="ͼ12">-d</span>&#xa0;\<br/><span class="ͼ12">--name</span>&#xa0;mysql \<br/><span class="ͼ12">-e</span>&#xa0;<span class="ͼ11">MYSQL_ROOT_PASSWORD</span><span class="ͼv">=</span><span class="ͼy">123456</span>&#xa0;&#xa0;\<br/><span class="ͼ12">-e</span>&#xa0;<span class="ͼ11">MYSQL_DATABASE</span><span class="ͼv">=</span>testdb \<br/><span class="ͼ12">-e</span>&#xa0;<span class="ͼ11">MYSQL_USER</span><span class="ͼv">=</span>test \<br/><span class="ͼ12">-e</span>&#xa0;<span class="ͼ11">MYSQL_PASSWORD</span><span class="ͼv">=</span>test123 \<br/><span class="ͼ12">-p</span>&#xa0;<span class="ͼy">3306</span>:3306 \<br/><span class="ͼ12">-v</span>&#xa0;mysql-data:/var/lib/mysql \<br/>mysql:8 \<br/><span class="ͼ12">--character-set-server</span><span class="ͼv">=</span>utf8mb4 \<br/><span class="ͼ12">--collation-server</span><span class="ͼv">=</span>utf8mb4_unicode_ci
+    docker run <span class="ͼ12">-d</span>&#xa0;\<br/><span class="ͼ12">--name</span>&#xa0;mysql \<br/><span class="ͼ12">-e</span>&#xa0;<span class="ͼ11">MYSQL_ROOT_PASSWORD</span><span class="ͼv">=794211</span>&#xa0;&#xa0;\<br/><span class="ͼ12">-e</span>&#xa0;<span class="ͼ11">MYSQL_DATABASE</span><span class="ͼv">=wangbdb</span>&#xa0;\<br/><span class="ͼ12">-e</span>&#xa0;<span class="ͼ11">MYSQL_USER</span><span class="ͼv">=wangb</span>&#xa0;&#xa0;\<br/><span class="ͼ12">-e</span>&#xa0;<span class="ͼ11">MYSQL_PASSWORD</span><span class="ͼv">=794211 </span>\<br/><span class="ͼ12">-p</span>&#xa0;<span class="ͼy">3306</span>:3306 \<br/><span class="ͼ12">-v</span>&#xa0;mysql-data:/var/lib/mysql \<br/>mysql:8 \<br/><span class="ͼ12">--character-set-server</span><span class="ͼv">=</span>utf8mb4 \<br/><span class="ͼ12">--collation-server</span><span class="ͼv">=</span>utf8mb4_unicode_ci
   </body>
 </html>
 </richcontent>
